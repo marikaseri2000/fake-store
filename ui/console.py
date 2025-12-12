@@ -4,8 +4,7 @@ def print_products_list(products: list[dict[str, any]]) -> None:
     print("-"*30)
 
     for i in products:
-        print(f"ID: {i["id"]}")
-        print(f"TITLE: {i["title"]}")
+        print(f"ID: {i["id"]} - TITLE: {i["title"]}")
 
 def print_single_product(product: dict[str, any]) -> None:
     

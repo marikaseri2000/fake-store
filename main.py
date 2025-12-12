@@ -12,12 +12,12 @@ def main() -> None:
         
         while True:
             try:
-                scelta_products: int = input("Scegli l'id del prodotto da visualizzare tra quelli mostrati a video: ")
+                scelta_products = input("Scegli l'id del prodotto da visualizzare tra quelli mostrati a video: ")
                 break
             except ValueError:
                 print("Devi inserire un valore valido.")
         
-        product_chosen: int = get_single_product(scelta_products, BASE_URL)
+        product_chosen: dict[str, any] = get_single_product(scelta_products, BASE_URL)
         product = product_model(product_chosen)
         print_single_product(product)
 
