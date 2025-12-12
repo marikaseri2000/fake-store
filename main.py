@@ -1,6 +1,6 @@
 from data.services import product_model
-from ui.console import print_products_list, print_single_product
-from data.repository import get_all_product, get_single_product
+from ui.console import print_products_list, print_single_product, product
+from data.repository import get_all_product, get_single_product,send_product,post_data
 from costants import BASE_URL
 
 def main() -> None:
@@ -20,6 +20,8 @@ def main() -> None:
         product_chosen: dict[str, any] = get_single_product(scelta_products, BASE_URL)
         product = product_model(product_chosen)
         print_single_product(product)
+        
+        #print_single_product(send_product(BASE_URL,product))
 
     except ValueError as e:
         print(f"Errore: {e}")

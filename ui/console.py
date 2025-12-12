@@ -17,3 +17,11 @@ def print_single_product(product: dict[str, any]) -> None:
     print(f"Category: {product["category"]}")
     print(f"Price: {product["price"]}")
     print(f"Description: {product["description"]}")
+
+product = {
+  "title": "IO & PIP",
+  "price": 10,
+  "description": "A description",
+  "categoryId": 7,
+  "images": ["https://placehold.co/600x400"]
+}
