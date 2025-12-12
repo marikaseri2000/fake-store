@@ -57,6 +57,7 @@ def send_product(URL: str, data: dict)-> dict[str, any]:
         raise Exception(f"Problema con la response: {e}")
 
 def post_data(URL: str, data:dict)-> Response:
+    """Funzione generica da poter riutilizzare."""
     try:
         response=post(URL, headers={"Content-Type": "application/json"}, json=data)
         response.raise_for_status()
