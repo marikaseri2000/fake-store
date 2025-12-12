@@ -18,8 +18,21 @@ def print_single_product(product: dict[str, any]) -> None:
     print(f"Price: {product["price"]}")
     print(f"Description: {product["description"]}")
 
+def new_product_c(product: dict[str, any]) -> None:
+    print("\n" + "*" * 60)
+    print("DETTAGLI PRODOTTO CREATO")
+    print("*" * 60)
+
+    print(f"Titolo: {product["title"]}")
+    print(f"Category: {[]}")
+    print(f"Images: {[]}")
+    print(f"Price: {product["price"]}")
+    print(f"Description: {product["description"]}")
+
+
+
 product = {
-  "title": "IO & PIP",
+  "title": "M&YOU",
   "price": 10,
   "description": "A description",
   "categoryId": 7,
