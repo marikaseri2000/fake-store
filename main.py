@@ -1,6 +1,6 @@
 from data.services import product_model, new_product_model
 from ui.console import print_products_list, print_single_product, product, new_product_c
-from data.repository import get_all_product, get_single_product,send_product,post_data
+from data.repository import get_all_product, get_single_product,send_product
 from costants import BASE_URL
 
 def main() -> None:
